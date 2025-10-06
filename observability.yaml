@@ -1,0 +1,23 @@
+standard_id: CVS-CORE-OBSERVABILITY
+version: 1.0
+description: >
+  Monitoring and traceability requirements for responsible AI-driven systems.
+
+rules:
+  - id: LOG-01
+    title: "Inference Logging"
+    requirement: "Log model inferences including timestamp, model version, and input hash."
+    severity: high
+    enforcement: hard
+
+  - id: TRACE-01
+    title: "Traceability"
+    requirement: "Link each AI output to its origin model and input source."
+    severity: high
+    enforcement: hard
+
+  - id: MON-01
+    title: "Anomaly Detection"
+    requirement: "Monitor for anomalous outputs and trigger alerts when thresholds are exceeded."
+    severity: medium
+    enforcement: soft
