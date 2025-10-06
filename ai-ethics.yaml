@@ -1,0 +1,23 @@
+standard_id: CVS-CORE-AI-ETHICS
+version: 1.0
+description: >
+  Ethical AI development principles ensuring transparency, accountability and fairness.
+
+rules:
+  - id: AI-TRANSPARENCY
+    title: "AI Transparency Notice"
+    requirement: "Inform users when content or decisions are AI-generated."
+    severity: critical
+    enforcement: hard
+
+  - id: AI-MODEL-DOC
+    title: "Model Documentation"
+    requirement: "Document model origin, dataset, limitations, and update history."
+    severity: high
+    enforcement: soft
+
+  - id: AI-BIAS
+    title: "Bias Mitigation"
+    requirement: "Implement and document strategies for bias detection and mitigation."
+    severity: high
+    enforcement: soft
