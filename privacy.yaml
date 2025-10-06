@@ -1,0 +1,23 @@
+standard_id: CVS-CORE-PRIVACY
+version: 1.0
+description: >
+  Privacy and data protection standards aligned with GDPR and AI Act requirements.
+
+rules:
+  - id: PRIV-01
+    title: "User Consent"
+    requirement: "Collect explicit consent for data usage and profiling."
+    severity: critical
+    enforcement: hard
+
+  - id: PRIV-02
+    title: "Data Minimization"
+    requirement: "Store only data strictly necessary for functionality."
+    severity: high
+    enforcement: hard
+
+  - id: PRIV-03
+    title: "Right to Deletion"
+    requirement: "Provide users the ability to request data removal."
+    severity: high
+    enforcement: soft
