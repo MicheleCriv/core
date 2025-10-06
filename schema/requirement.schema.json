@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CVS Core Requirement Schema",
+  "type": "object",
+  "properties": {
+    "standard_id": { "type": "string" },
+    "version": { "type": "string" },
+    "description": { "type": "string" },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "requirement": { "type": "string" },
+          "rationale": { "type": "string" },
+          "severity": { "enum": ["critical", "high", "medium", "low"] },
+          "enforcement": { "enum": ["hard", "soft"] }
+        },
+        "required": ["id", "title", "requirement", "severity"]
+      }
+    }
+  },
+  "required": ["standard_id", "version", "description", "rules"]
+}
