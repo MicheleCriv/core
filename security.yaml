@@ -1,0 +1,33 @@
+standard_id: CVS-CORE-SECURITY
+version: 1.0
+description: >
+  Baseline security requirements applicable to all AI-driven software projects.
+
+rules:
+  - id: AUTH-01
+    title: "Secure Authentication"
+    requirement: "Use standardized authentication protocols (OAuth2, OIDC, SAML)."
+    rationale: "Prevents weak or custom authentication mechanisms."
+    severity: critical
+    enforcement: hard
+
+  - id: DATA-01
+    title: "Data Encryption"
+    requirement: "Encrypt sensitive data at rest and in transit (TLS1.2+, AES256)."
+    rationale: "Protects against data leaks and interception."
+    severity: critical
+    enforcement: hard
+
+  - id: DEP-01
+    title: "Dependency Scanning"
+    requirement: "Perform automated vulnerability scanning on third-party dependencies."
+    rationale: "Prevents supply chain attacks."
+    severity: high
+    enforcement: soft
+
+  - id: SEC-01
+    title: "Security Headers"
+    requirement: "Implement standard HTTP security headers (CSP, HSTS, X-Frame-Options)."
+    rationale: "Mitigates XSS and clickjacking attacks."
+    severity: medium
+    enforcement: soft
